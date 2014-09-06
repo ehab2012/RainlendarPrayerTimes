@@ -16,10 +16,9 @@ City_Zone=3;  -- 3 GMT
 City_Fajir_Angle=12;  -- 12 , norm 18 or 19
 City_Asir_Calculation = 1;  -- 1 Shafi or Omalqrah , 2 Henfy
 CategoriesName = "PRAYER"    -- can be used to hide if needed
-CONSOLEPRINT=1; --- if set 1 printfs , nil RL will add the events
+CONSOLEPRINT=nil; --- if set 1 printfs , nil RL will add the events
 
 -- TODO isha is +1.5 needs fixing
--- TODO add the c comment part  -- Ahmed Amin Elsheshtawy support@islamware.com
 -------------------------------------------------------------------------------
 DToR=(math.pi / 180.0);
 RToH=(12.0 / math.pi);

@@ -17,7 +17,8 @@ CategoriesName = "PRAYER"    -- can be used to hide if needed
 
 CONSOLEPRINT=nil; --- if set 1 printfs , nil RL will add the events
 ```
-* 
+* copy the script to your Rainlendar scripts folder, my path is /usr/lib/rainlendar2/scripts
+* you can exclude event PRAYER from the calendar view and keep in event list
 
 ##Testing
 you can see todays prayer times from console
@@ -33,3 +34,6 @@ $lua PrayerTimes_RL.lua
 2014-09-06   Isha 21:54:00
 
 ```
+##TODO
+* improve lua script code.
+* fix isha time, currently it is set an addition of 1.5 hours to magrib time
