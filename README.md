@@ -2,25 +2,34 @@
 
 ##Summary
 Rainlendar is a super multiplatform calender for desktop pcs and this script added Islamic prayer times events.
-
+This script is a port from c code by PrayerTimes v.2006 Ahmed Amin Elsheshtawy http://www.islamware.com
 
 ##Setup
-* Disable rainleander2 autostart function ( options->general )
-* Set new path, probably pointing to Dropbox folder, to ics file in rainleander2 optins ( options->Calendars-><calendar>->format iCalendar->file name )
-* Edit program path and ics path( same path as in previous point ) in rainlendar2.vbs:
+* edit PrayerTimes_RL.lua top values to adjust location, zone and fajir angle
+```
+-- Finland, Tampere
+City_Longtude=23.75;
+City_Latitude=61.5;
+City_Zone=3;  -- 3 GMT
+City_Fajir_Angle=12;  -- 12 , norm 18 or 19
+City_Asir_Calculation = 1;  -- 1 Shafi or Omalqrah , 2 Henfy
+CategoriesName = "PRAYER"    -- can be used to hide if needed
+
+CONSOLEPRINT=nil; --- if set 1 printfs , nil RL will add the events
+```
+* 
+
+##Testing
+you can see todays prayer times from console
 
 ```
-    program = "C:\Program Files\Rainlendar2\Rainlendar2.exe"
-    ics = "C:\Users\kubenstein\Dropbox\default.ics"
+$lua PrayerTimes_RL.lua
+
+2014-09-06  Fajer 04:40:00
+2014-09-06 Shrooq 06:25:00
+2014-09-06  Zohar 13:25:00
+2014-09-06   Aser 16:60:00
+2014-09-06 Magreb 20:24:00
+2014-09-06   Isha 21:54:00
+
 ```
-
-* Put rainlendar2.vbs file in your autostart folder
-
-##Supported systems
-* Windows ( tested on winXP, win7 )
-
-
-##Source
-Core vbs code was taken from:
-
-http://www.rainlendar.net/cms/index.php?option=com_kunena&Itemid=42&func=view&catid=3&id=11916
