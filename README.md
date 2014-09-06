@@ -17,7 +17,7 @@ CategoriesName = "PRAYER"    -- can be used to hide if needed
 
 CONSOLEPRINT=nil; --- if set 1 printfs , nil RL will add the events
 ```
-* copy the script to your Rainlendar scripts folder, my path is /usr/lib/rainlendar2/scripts for windows if it was installed under program files directoy it is %PROGRAMFILES%\Rainlendars\scripts\
+* copy the script to your Rainlendar scripts folder, my path is /usr/lib/rainlendar2/scripts for windows if it was installed under program files directory it is %PROGRAMFILES%\Rainlendars\scripts\
 * you can exclude event PRAYER from the calendar view and keep in event list
 
 ##Testing
