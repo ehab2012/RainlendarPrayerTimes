@@ -1,4 +1,9 @@
-﻿-- libya, Tripoli
+-- Ehab Aboudaya ehab.abbyday@gmail.com
+-- Rainlendar PrayerTimes v.1.0
+-- Lua script to add Islamic prayer times to Rainlendar event list
+-- ported from Library Name - PrayerTimes v.2006 Ahmed Amin Elsheshtawy http://www.islamware.com
+
+-- libya, Tripoli
 --City_Longtude=13.1800;
 --City_Latitude=32.8925;
 
@@ -11,7 +16,7 @@ City_Zone=3;  -- 3 GMT
 City_Fajir_Angle=12;  -- 12 , norm 18 or 19
 City_Asir_Calculation = 1;  -- 1 Shafi or Omalqrah , 2 Henfy
 CategoriesName = "PRAYER"    -- can be used to hide if needed
-CONSOLEPRINT=nil; --- if set 1 printfs , nil RL will add the events
+CONSOLEPRINT=1; --- if set 1 printfs , nil RL will add the events
 
 -- TODO isha is +1.5 needs fixing
 -- TODO add the c comment part  -- Ahmed Amin Elsheshtawy support@islamware.com
@@ -553,4 +558,3 @@ end
 collectgarbage();
 
 ------------------------------------------------
-
